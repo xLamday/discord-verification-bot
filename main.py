@@ -34,11 +34,5 @@ async def verify(ctx):
     
 
 
-#command= !clr
-@bot.command()
-async def clr(ctx, count=1):
-    messages = await ctx.channel.purge(limit=count+1)
-    await ctx.send(f'{len(messages)-1} messages were deleted!', delete_after=5)
-
         
 bot.run(TOKEN)
