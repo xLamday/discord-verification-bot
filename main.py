@@ -16,10 +16,6 @@ async def on_ready():
     print("bot is ready and online")
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("!hi"))
 
-#when typed !hi, yo:) output by the bot
-@bot.command
-async def hi(ctx):
-    await ctx.send("yo:)")
 
 #redirected to welcome channel and asks for verification
 @bot.event
