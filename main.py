@@ -29,10 +29,12 @@ async def on_member_join(member):
     embed.add_field(name="Verify to access all channels!", value="")
     await channel.send(embed=embed)
 
-
 #verification
-# @bot.command()
-# async def verify(ctx):
+@bot.command()
+async def verify(ctx):
+    role = ctx.guild.get_role(VERIFY_ROLE_ID)
+    await ctx.author.add_roles(role)
+    await ctx.send(f"The <@&{VERIFY_ROLE_ID}> role has successfully been added to you. Congrats!")
     
 
 
