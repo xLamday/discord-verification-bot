@@ -33,6 +33,4 @@ async def verify(ctx):
     await ctx.send(f"The <@&{VERIFY_ROLE_ID}> role has successfully been added to you. Congrats!")
     
 
-
-        
 bot.run(TOKEN)
