@@ -1,0 +1,5 @@
+# Default Mac File manager 
+.DS_Store
+
+# Python virtual environment
+venv/*
