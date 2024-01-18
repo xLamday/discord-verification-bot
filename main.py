@@ -1,8 +1,7 @@
 import asyncio, discord
 from discord.ext import commands
+from dotenv import load_dotenv ## Makes your token stored in a secure way and inaccesible
 
-#global variables
-TOKEN = "token"
 WELCOME_CHANNEL_ID = channel_id
 VERIFY_ROLE_ID = verify_role_id
 
