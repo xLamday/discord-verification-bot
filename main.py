@@ -4,7 +4,7 @@ from os
 from dotenv import load_dotenv ## Makes your token stored in a secure way and inaccesible
 
 
-load_env()
+load_dotenv()
 token = os.environ['DISCORD_BOT_TOKEN']
 WELCOME_CHANNEL_ID = channel_id
 VERIFY_ROLE_ID = verify_role_id
