@@ -1,7 +1,11 @@
 import asyncio, discord
 from discord.ext import commands
+from os
 from dotenv import load_dotenv ## Makes your token stored in a secure way and inaccesible
 
+
+load_env()
+token = os.environ['DISCORD_BOT_TOKEN']
 WELCOME_CHANNEL_ID = channel_id
 VERIFY_ROLE_ID = verify_role_id
 
@@ -32,4 +36,4 @@ async def verify(ctx):
     await ctx.send(f"The <@&{VERIFY_ROLE_ID}> role has successfully been added to you. Congrats!")
     
 
-bot.run(TOKEN)
+bot.run(token)
